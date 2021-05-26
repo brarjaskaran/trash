@@ -1,8 +1,10 @@
 import "./App.css";
 
 import { useState } from "react";
+import List from "./List";
 
 function App() {
+  const [list, setList] = useState([]);
   const [buttonColor, setButtonColor] = useState("red");
   const [isChecked, setIsChecked] = useState(false);
 
@@ -10,6 +12,7 @@ function App() {
 
   return (
     <div>
+      <List />
       <button
         onClick={() => setButtonColor(newButtonColor)}
         style={{ backgroundColor: buttonColor }}
