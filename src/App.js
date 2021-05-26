@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
+  const [home, setHome] = useState([]);
   const [buttonColor, setButtonColor] = useState("red");
   const [isChecked, setIsChecked] = useState(false);
 
