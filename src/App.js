@@ -4,7 +4,11 @@ import { useState } from "react";
 import List from "./List";
 
 function App() {
+<<<<<<< HEAD
   const [list, setList] = useState([]);
+=======
+  const [home, setHome] = useState([]);
+>>>>>>> tesr
   const [buttonColor, setButtonColor] = useState("red");
   const [isChecked, setIsChecked] = useState(false);
 
